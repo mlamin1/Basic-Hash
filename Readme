@@ -1,0 +1,34 @@
+Muniru Lamin
+COSC320 Lab-7
+04/03/19
+
+
+This program is made to take is a word or a sentence and hash it and print it out in hexidecimal form
+There is only one file that contains all my code, which is the main.cpp. In the main, I have 4 function 
+including my main. I have a hex conversion function that takes the size_t value and prints it out as 
+hexidecimal. I have my hash function which takes a size_t value and does a multiplicational computation 
+to it and returns it. There are two string conversion functions which converts the string to an int in
+their unique way before calling the hash function. Then finally my main which give the user an option
+on which typ of string function to test, and prints out their original word and the hash hex conversion 
+of their word.
+
+1.I approach the problem by totally reviewing the prompt and understanding what my professor wanted me to do.
+After reading, I implemented my has function because it was given in the prompt. Then I tested the function 
+by creating some stuff in my main. And I continue to work on my other functions testing them as i implemented them.
+
+
+2.Why does the Hash function make sense?
+	This hash makes sense because taking the string coming into the hash and multiplying it by a huge 
+	prime number and dividing it by the size the size of the machine size to the power of two will produce
+	that will totally disguise the number that will return to the main.
+ 3.String Conversion functions
+	My first string conversion function takes a string from the user and gets their ASCII values of each character 
+	and multiply it by the size of the string. This is also known as the base 128 conversion.
+
+	My second string conversion function takes a string and adds all the ASCII values up and hash it. this function
+	was used to show why it is not a good idea to just add the ASCII values and hash beacuase all of the hash for the 
+	permutation type of the word will have the same hash value.
+4.My code can be improved by coming up with a more creative hash, but unfortunately I am still grabbing the concept of the 
+different ways to convert string to int to get a better hash value. I could make my code better by making better string function,
+make function for word only and function for sentences, add validation just incase the size of the sentence entered by the user 
+goes beyond the int limit. 
